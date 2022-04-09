@@ -1,0 +1,116 @@
+
+.game {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000;
+  color: white;
+  font-family: Verdana;
+}
+
+.game >h1{
+  display: flex;
+}
+
+.game >h1 >span{
+  font-family: Verdana;
+  font-weight: normal;
+  margin: 5px 0 0 10px;
+}
+
+
+.game  >h1 >div{
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.game  >h1 >div >span{
+  width:20px; 
+  height:20px; 
+  margin: 2px;
+  border-radius: 25%;
+  border:2px solid #fff;
+}
+
+.game  >h1 >div .white{
+  background-color:#fff;
+}
+
+
+.board {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player {
+  color: #fff;
+  background: #000;
+  border-style: solid;
+  margin: 0 25px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  font-size: 10px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+.player >span {
+  font-size:46px;
+}
+
+.turn {
+  color: #000;
+  background: #fff;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.winner {
+  opacity: 0.2;
+}
+
+.card {
+  padding: 5px;
+  opacity: 0.7;
+}
+
+.card >img {
+  border-radius: 5%;
+}
+
+.current {
+  opacity: 1;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  left: 35%;
+}
+
+.message >h1 {
+  font-weight: normal;
+}
+
+.message >button {
+  height: 70px;
+  width: 200px;
+  color: #fff;
+  font-size: 26px;
+  background-color: #000;
+  border-radius: 50px;
+  border:2px solid #fff;
+}
